@@ -100,6 +100,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>StoreFront.edmx</DependentUpon>
     </Compile>
+    <Compile Include="StoreFrontMetadata\StoreFrontMetadata.cs" />
     <Compile Include="Supplier.cs">
       <DependentUpon>StoreFront.tt</DependentUpon>
     </Compile>
