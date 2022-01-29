@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ed82323e3961486999752aa1148da41b" Name="Diagram1">
+        <EntityTypeShape EntityType="StoreFrontModel.AuthorTable" Width="1.5" PointX="0.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreFrontModel.BooksTable" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreFrontModel.Customer" Width="1.5" PointX="0.75" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreFrontModel.Employee" Width="1.5" PointX="2.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreFrontModel.GenreIDTable" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreFrontModel.OrderDetail" Width="1.5" PointX="5.25" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreFrontModel.Order" Width="1.5" PointX="3" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreFrontModel.Publisher" Width="1.5" PointX="0.75" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreFrontModel.Shipper" Width="1.5" PointX="0.75" PointY="16.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreFrontModel.Stock" Width="1.5" PointX="0.75" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreFrontModel.Supplier" Width="1.5" PointX="4.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreFrontModel.sysdiagram" Width="1.5" PointX="6.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreFrontModel.InventoryListing" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="StoreFrontModel.FK_BooksTable_AuthorTable" ManuallyRouted="false" />
+        <AssociationConnector Association="StoreFrontModel.FK_BooksTable_GenreIDTable" ManuallyRouted="false" />
+        <AssociationConnector Association="StoreFrontModel.FK_BooksTable_Publishers" ManuallyRouted="false" />
+        <AssociationConnector Association="StoreFrontModel.FK_BooksTable_Stock" ManuallyRouted="false" />
+        <AssociationConnector Association="StoreFrontModel.FK_OrderDetails_BooksTable" ManuallyRouted="false" />
+        <AssociationConnector Association="StoreFrontModel.FK_Orders_Customers" ManuallyRouted="false" />
+        <AssociationConnector Association="StoreFrontModel.FK_Employees_Employees" ManuallyRouted="false" />
+        <AssociationConnector Association="StoreFrontModel.FK_OrderDetails_Orders" ManuallyRouted="false" />
+        <AssociationConnector Association="StoreFrontModel.FK_Orders_Shippers" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
