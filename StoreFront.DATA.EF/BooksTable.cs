@@ -14,12 +14,6 @@ namespace StoreFront.DATA.EF
     
     public partial class BooksTable
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public BooksTable()
-        {
-            this.OrderDetails = new HashSet<OrderDetail>();
-        }
-    
         public int BookID { get; set; }
         public string BooksTitle { get; set; }
         public int GenreID { get; set; }
@@ -35,7 +29,5 @@ namespace StoreFront.DATA.EF
         public virtual GenreIDTable GenreIDTable { get; set; }
         public virtual Publisher Publisher1 { get; set; }
         public virtual Stock Stock { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<OrderDetail> OrderDetails { get; set; }
     }
 }

@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5225248B-B868-4AA1-819B-5457ABD8D19D}</ProjectGuid>
+    <ProjectGuid>{A50EF729-B39A-4538-B36C-A82D097445C9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>StoreFront.DATA.EF</RootNamespace>
@@ -51,86 +51,76 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AuthorTable.cs">
-      <DependentUpon>StoreFront.tt</DependentUpon>
+      <DependentUpon>StoreFrontModel.tt</DependentUpon>
     </Compile>
     <Compile Include="BooksTable.cs">
-      <DependentUpon>StoreFront.tt</DependentUpon>
+      <DependentUpon>StoreFrontModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Class1.cs" />
     <Compile Include="Customer.cs">
-      <DependentUpon>StoreFront.tt</DependentUpon>
+      <DependentUpon>StoreFrontModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Employee.cs">
-      <DependentUpon>StoreFront.tt</DependentUpon>
+      <DependentUpon>StoreFrontModel.tt</DependentUpon>
     </Compile>
     <Compile Include="GenreIDTable.cs">
-      <DependentUpon>StoreFront.tt</DependentUpon>
+      <DependentUpon>StoreFrontModel.tt</DependentUpon>
     </Compile>
     <Compile Include="InventoryListing.cs">
-      <DependentUpon>StoreFront.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Order.cs">
-      <DependentUpon>StoreFront.tt</DependentUpon>
-    </Compile>
-    <Compile Include="OrderDetail.cs">
-      <DependentUpon>StoreFront.tt</DependentUpon>
+      <DependentUpon>StoreFrontModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Publisher.cs">
-      <DependentUpon>StoreFront.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Shipper.cs">
-      <DependentUpon>StoreFront.tt</DependentUpon>
+      <DependentUpon>StoreFrontModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Stock.cs">
-      <DependentUpon>StoreFront.tt</DependentUpon>
+      <DependentUpon>StoreFrontModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="StoreFront.Context.cs">
+    <Compile Include="StoreFrontModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>StoreFront.Context.tt</DependentUpon>
+      <DependentUpon>StoreFrontModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="StoreFront.cs">
+    <Compile Include="StoreFrontModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>StoreFront.tt</DependentUpon>
+      <DependentUpon>StoreFrontModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="StoreFront.Designer.cs">
+    <Compile Include="StoreFrontModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>StoreFront.edmx</DependentUpon>
+      <DependentUpon>StoreFrontModel.edmx</DependentUpon>
     </Compile>
-    <Compile Include="StoreFrontMetadata\StoreFrontMetadata.cs" />
     <Compile Include="Supplier.cs">
-      <DependentUpon>StoreFront.tt</DependentUpon>
+      <DependentUpon>StoreFrontModel.tt</DependentUpon>
     </Compile>
     <Compile Include="sysdiagram.cs">
-      <DependentUpon>StoreFront.tt</DependentUpon>
+      <DependentUpon>StoreFrontModel.tt</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EntityDeploy Include="StoreFront.edmx">
+    <EntityDeploy Include="StoreFrontModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>StoreFront.Designer.cs</LastGenOutput>
+      <LastGenOutput>StoreFrontModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.Config" />
     <None Include="packages.config" />
-    <None Include="StoreFront.edmx.diagram">
-      <DependentUpon>StoreFront.edmx</DependentUpon>
+    <None Include="StoreFrontModel.edmx.diagram">
+      <DependentUpon>StoreFrontModel.edmx</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="StoreFront.Context.tt">
+    <Content Include="StoreFrontModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>StoreFront.Context.cs</LastGenOutput>
-      <DependentUpon>StoreFront.edmx</DependentUpon>
+      <LastGenOutput>StoreFrontModel.Context.cs</LastGenOutput>
+      <DependentUpon>StoreFrontModel.edmx</DependentUpon>
     </Content>
-    <Content Include="StoreFront.tt">
+    <Content Include="StoreFrontModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>StoreFront.edmx</DependentUpon>
-      <LastGenOutput>StoreFront.cs</LastGenOutput>
+      <DependentUpon>StoreFrontModel.edmx</DependentUpon>
+      <LastGenOutput>StoreFrontModel.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>

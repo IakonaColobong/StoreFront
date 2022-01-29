@@ -30,10 +30,7 @@ namespace StoreFront.DATA.EF
         public virtual DbSet<Customer> Customers { get; set; }
         public virtual DbSet<Employee> Employees { get; set; }
         public virtual DbSet<GenreIDTable> GenreIDTables { get; set; }
-        public virtual DbSet<OrderDetail> OrderDetails { get; set; }
-        public virtual DbSet<Order> Orders { get; set; }
         public virtual DbSet<Publisher> Publishers { get; set; }
-        public virtual DbSet<Shipper> Shippers { get; set; }
         public virtual DbSet<Stock> Stocks { get; set; }
         public virtual DbSet<Supplier> Suppliers { get; set; }
         public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
