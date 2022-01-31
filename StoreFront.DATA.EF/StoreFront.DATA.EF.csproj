@@ -56,7 +56,6 @@
     <Compile Include="BooksTable.cs">
       <DependentUpon>StoreFrontModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Class1.cs" />
     <Compile Include="Customer.cs">
       <DependentUpon>StoreFrontModel.tt</DependentUpon>
     </Compile>
@@ -76,6 +75,7 @@
     <Compile Include="Stock.cs">
       <DependentUpon>StoreFrontModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="StoreFrontMetadata\StoreFrontMetadata.cs" />
     <Compile Include="StoreFrontModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -105,7 +105,9 @@
     </EntityDeploy>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.Config" />
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
     <None Include="StoreFrontModel.edmx.diagram">
       <DependentUpon>StoreFrontModel.edmx</DependentUpon>

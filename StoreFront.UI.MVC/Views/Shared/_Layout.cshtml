@@ -31,9 +31,10 @@
                     <a class="menu_trigger" href="#">menu</a>
                     <nav id="nav">
                         <ul>
-                            <li><a @Url.Action("Index", "Home")>Home</a></li>
-                            <li><a @Url.Action("Index", "Books")>Books</a></li>
-                            <li><a @Url.Action("Index", "Contact")>Contact</a></li>
+                            <li>@Html.ActionLink("Home","Index","Home")</li>
+                            <li>@Html.ActionLink("Contact Us", "Contact", "Home")</li>
+                            <li>@Html.ActionLink("Book Titles", "Products", "Home")</li>
+                            @*<li><a @Url.Action("Home", "Contact")>Contact</a></li>*@
                             
                         </ul>
                     </nav>
@@ -56,21 +57,21 @@
                                 <div class="heading">
                                     <h3>About us</h3>
                                 </div>
-                                <p>Vero eos et accusamus et iusto dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti</p>
-                                <p>Quos dolores et quas molestias excepturi sint occaecati cupiditate.</p>
+                                <p>Your leading purveyor of hard to find occult items. We do not Judge, we only make a profit. </p>
+                                <p>Not to be confused with those fantasy game books from the Wizards that live on the coast, we offer only the most authentic of tomes and items. </p>
                             </div>
                             <div class="col">
                                 <div class="heading">
                                     <h3>Contact</h3>
                                 </div>
                                 <address>
-                                    <p><strong>Elegantic Inc.</strong></p>
-                                    <p>1041 Madison Ave,</p>
-                                    <p>New York</p>
+                                    <p><strong>Wizards OFF the Coast</strong></p>
+                                    <p>1041 Imaginary Land</p>
+                                    <p>Sumatra</p>
                                 </address>
                                 <address>
                                     <p>(45) 523 565 242</p>
-                                    <p><a href="mailto:office@elegantic.com">office@elegantic.com</a></p>
+                                    <p><a href="mailto:office@wizardsoffthecoast.com">office@wizardsoffthecoast.com</a></p>
                                 </address>
                             </div>
                             <div class="col col-contact">

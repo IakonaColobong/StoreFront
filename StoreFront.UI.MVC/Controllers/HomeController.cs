@@ -26,5 +26,13 @@ namespace StoreFront.UI.MVC.Controllers
 
             return View();
         }
+
+        [HttpGet]
+        public ActionResult Products()
+        {
+            ViewBag.Message = "Our listings.";
+
+            return View();
+        }
     }
 }

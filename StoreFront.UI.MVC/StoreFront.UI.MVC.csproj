@@ -46,10 +46,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.2\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
@@ -168,6 +168,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AuthorTablesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\RolesAdminController.cs" />
@@ -195,6 +196,7 @@
     <Content Include="Content\images\arrows_select.png" />
     <Content Include="Content\images\bg_footer_line.gif" />
     <Content Include="Content\images\bg_line.gif" />
+    <Content Include="Content\images\BibleofAmet.jpg" />
     <Content Include="Content\images\btn-switcher%40x2.png" />
     <Content Include="Content\images\btn-switcher-active%40x2.png" />
     <Content Include="Content\images\btn-switcher-active.png" />
@@ -203,6 +205,10 @@
     <Content Include="Content\images\btn_delete.gif" />
     <Content Include="Content\images\btn_mobile_menu%40x2.png" />
     <Content Include="Content\images\btn_mobile_menu.png" />
+    <Content Include="Content\images\DeUmbrarumRegniNovemPortis.jpg" />
+    <Content Include="Content\images\DiaryofPatienceBuckner.jpg" />
+    <Content Include="Content\images\DiaryofPatienceBuckner_270x396.jpg" />
+    <Content Include="Content\images\GrandGrimoire.jpg" />
     <Content Include="Content\images\ico-discover%40x2.gif" />
     <Content Include="Content\images\ico-discover.gif" />
     <Content Include="Content\images\ico-express%40x2.gif" />
@@ -246,13 +252,22 @@
     <Content Include="Content\images\img-item-06.jpg" />
     <Content Include="Content\images\img-item-07.jpg" />
     <Content Include="Content\images\img-item-08.jpg" />
+    <Content Include="Content\images\Interior.jpg" />
+    <Content Include="Content\images\LemegetonClaviculSalomonis.jpg" />
+    <Content Include="Content\images\LiberIvonis.jpg" />
     <Content Include="Content\images\logo%40x2.png" />
     <Content Include="Content\images\logo.png" />
+    <Content Include="Content\images\Maleficio.jpg" />
+    <Content Include="Content\images\Necronomicon.jpg" />
+    <Content Include="Content\images\ReginasDiary.gif" />
     <Content Include="Content\images\slide-01.jpg" />
     <Content Include="Content\images\slide-02.jpg" />
     <Content Include="Content\images\slide-03.jpg" />
     <Content Include="Content\images\slide-04.jpg" />
     <Content Include="Content\images\sprite.png" />
+    <Content Include="Content\images\TheBookOfAbramelin.jpg" />
+    <Content Include="Content\images\TheWeepingBook.jpg" />
+    <Content Include="Content\images\Tobin%27s Spirit Guide.jpg" />
     <Content Include="Content\images\transparent.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\fonts\novecentosanswide-bold-webfont.svg" />
@@ -385,7 +400,9 @@
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -449,6 +466,13 @@
     <Content Include="_Archive\fonts\novecentosanswide-normal-webfont.ttf" />
     <Content Include="_Archive\fonts\novecentosanswide-normal-webfont.woff" />
     <Content Include="Views\Shared\OriginalLayout.cshtml" />
+    <Content Include="Views\Shared\OrigirnalLoginPartial.cshtml" />
+    <Content Include="Views\Home\Products.cshtml" />
+    <Content Include="Views\AuthorTables\Create.cshtml" />
+    <Content Include="Views\AuthorTables\Delete.cshtml" />
+    <Content Include="Views\AuthorTables\Details.cshtml" />
+    <Content Include="Views\AuthorTables\Edit.cshtml" />
+    <Content Include="Views\AuthorTables\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -465,6 +489,12 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\StoreFront.DATA.EF\StoreFront.DATA.EF.csproj">
+      <Project>{a50ef729-b39a-4538-b36c-a82d097445c9}</Project>
+      <Name>StoreFront.DATA.EF</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

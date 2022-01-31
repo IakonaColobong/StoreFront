@@ -1,0 +1,305 @@
+﻿
+@{
+    ViewBag.Title = "Products";
+}
+
+
+
+
+<section class="bar">
+    <div class="bar-frame">
+        <ul class="breadcrumbs">
+            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+            <li>@ViewBag.Title</li>
+        </ul>
+    </div>
+</section>
+<section id="main">
+    <div class="top-bar">
+        <ul class="paging">
+            <li class="prev"><a href="#">prev</a></li>
+            <li><a href="#">1</a></li>
+            <li class="active"><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li class="next"><a href="#">next</a></li>
+        </ul>
+        <form class="form-sort" action="#">
+            <fieldset>
+                <div class="row">
+                    <label for="sort">Sort by :</label>
+                    <select id="sort">
+                        <option>price</option>
+                        <option>price</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <label for="page">Products per page:</label>
+                    <select id="page">
+                        <option>8</option>
+                        <option>8</option>
+                    </select>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <ul class="item-list">
+        <li>
+            <div class="item">
+                <div class="image">
+                    <img src="~/Content/images/BibleofAmet.jpg" />
+                    <div class="hover">
+                        <div class="item-content">
+                            <a href="cart.html" class="btn white normal">Add to cart</a>
+                            <a href="singleproduct.html" class="btn white normal">See details</a>
+                        </div>
+                        <span class="bg"></span>
+                    </div>
+                </div>
+                <span class="name">The Bible of Amet</span>
+                <span>$250.00</span>
+            </div>
+        </li>
+        <li>
+            <div class="item">
+                <div class="image">
+
+                    <img src="~/Content/images/DeUmbrarumRegniNovemPortis.jpg" />
+                    <div class="hover">
+                        <div class="item-content">
+                            <a href="cart.html" class="btn white normal">Add to cart</a>
+                            <a href="singleproduct.html" class="btn white normal">See details</a>
+                        </div>
+                        <span class="bg"></span>
+                    </div>
+                </div>
+                <span class="name">De Umbrarum Regni Novem</span>
+                <span>$399.00</span>
+            </div>
+        </li>
+        <li>
+            <div class="item">
+                <div>
+                    <img src="~/Content/images/DiaryofPatienceBuckner_270x396.jpg" />
+
+                    <div class="hover">
+                        <div class="item-content">
+                            <a href="cart.html" class="btn white normal">Add to cart</a>
+                            <a href="singleproduct.html" class="btn white normal">See details</a>
+                        </div>
+                        <span class="bg"></span>
+                    </div>
+                </div>
+                <span class="name">Diary of Patience Buckner</span>
+                <span>$299.00</span>
+            </div>
+        </li>
+        <li>
+            <div class="item">
+                <div class="image">
+                    <img src="~/Content/images/GrandGrimoire.jpg" />
+
+                    <div class="hover">
+                        <div class="item-content">
+                            <a href="cart.html" class="btn white normal">Add to cart</a>
+                            <a href="singleproduct.html" class="btn white normal">See details</a>
+                        </div>
+                        <span class="bg"></span>
+                    </div>
+                </div>
+                <span class="name">Grand Grimoire VOL I</span>
+                <span>$450.00</span>
+            </div>
+        </li>
+
+        <li>
+            <div class="item">
+                <div class="image">
+                    <img src="~/Content/images/GrandGrimoire.jpg" />
+
+                    <div class="hover">
+                        <div class="item-content">
+                            <a href="cart.html" class="btn white normal">Add to cart</a>
+                            <a href="singleproduct.html" class="btn white normal">See details</a>
+                        </div>
+                        <span class="bg"></span>
+                    </div>
+                </div>
+                <span class="name">Grand Grimoire VOL II</span>
+                <span>$450.00</span>
+            </div>
+        </li>
+
+        <li>
+            <div class="item">
+                <div class="image">
+                    <img src="~/Content/images/GrandGrimoire.jpg" />
+
+                    <div class="hover">
+                        <div class="item-content">
+                            <a href="cart.html" class="btn white normal">Add to cart</a>
+                            <a href="singleproduct.html" class="btn white normal">See details</a>
+                        </div>
+                        <span class="bg"></span>
+                    </div>
+                </div>
+                <span class="name">Grand Grimoire VOL III</span>
+                <span>$450.00</span>
+            </div>
+        </li>
+        <li>
+            <div class="item">
+                <div class="image">
+                    <img src="~/Content/images/LemegetonClaviculSalomonis.jpg" />
+                    <div class="hover">
+                        <div class="item-content">
+                            <a href="cart.html" class="btn white normal">Add to cart</a>
+                            <a href="singleproduct.html" class="btn white normal">See details</a>
+                        </div>
+                        <span class="bg"></span>
+                    </div>
+                </div>
+                <span class="name">Lemegeton Claviculus Salomonis</span>
+                <span>$200.00</span>
+            </div>
+        </li>
+        <li>
+            <div class="item">
+                <div class="image">
+
+                    <img src="~/Content/images/LiberIvonis.jpg" />
+                    <div class="hover">
+                        <div class="item-content">
+                            <a href="cart.html" class="btn white normal">Add to cart</a>
+                            <a href="singleproduct.html" class="btn white normal">See details</a>
+                        </div>
+                        <span class="bg"></span>
+                    </div>
+                </div>
+                <span class="name">Liber Ivonis</span>
+                <span>$120.00</span>
+            </div>
+        </li>
+        <li>
+            <div class="item">
+                <div class="image">
+                    <img src="~/Content/images/Maleficio.jpg" />
+                    <div class="hover">
+                        <div class="item-content">
+                            <a href="cart.html" class="btn white normal">Add to cart</a>
+                            <a href="singleproduct.html" class="btn white normal">See details</a>
+                        </div>
+                        <span class="bg"></span>
+                    </div>
+                </div>
+                <span class="name">Maleficio</span>
+                <span>$499.00</span>
+            </div>
+        </li>
+        <li>
+            <div class="item">
+                <div class="image">
+                    <img src="~/Content/images/Necronomicon.jpg" />
+                    <div class="hover">
+                        <div class="item-content">
+                            <a href="cart.html" class="btn white normal">Add to cart</a>
+                            <a href="singleproduct.html" class="btn white normal">See details</a>
+                        </div>
+                        <span class="bg"></span>
+                    </div>
+                </div>
+                <span class="name">Necronomicon</span>
+                <span>$250.00</span>
+            </div>
+        </li>
+        <li>
+            <div class="item">
+                <div class="image">
+                    <img src="~/Content/images/ReginasDiary.gif" />
+                    <div class="hover">
+                        <div class="item-content">
+                            <a href="cart.html" class="btn white normal">Add to cart</a>
+                            <a href="singleproduct.html" class="btn white normal">See details</a>
+                        </div>
+                        <span class="bg"></span>
+                    </div>
+                </div>
+                <span class="name">Regina's Diary</span>
+                <span>$250.00</span>
+            </div>
+        </li>
+        <li>
+            <div class="item">
+                <div class="image">
+                    <img src="~/Content/images/TheBookOfAbramelin.jpg" />
+                    <div class="hover">
+                        <div class="item-content">
+                            <a href="cart.html" class="btn white normal">Add to cart</a>
+                            <a href="singleproduct.html" class="btn white normal">See details</a>
+                        </div>
+                        <span class="bg"></span>
+                    </div>
+                </div>
+                <span class="name">Book of Abramelin</span>
+                <span>$250.00</span>
+            </div>
+        </li>
+        <li>
+            <div class="item">
+                <div class="image">
+                    <img src="~/Content/images/TheWeepingBook.jpg" />
+                    <div class="hover">
+                        <div class="item-content">
+                            <a href="cart.html" class="btn white normal">Add to cart</a>
+                            <a href="singleproduct.html" class="btn white normal">See details</a>
+                        </div>
+                        <span class="bg"></span>
+                    </div>
+                </div>
+                <span class="name">The Weeping Book</span>
+                <span>$250.00</span>
+            </div>
+        </li>
+        <li>
+            <div class="item">
+                <div class="image">
+                    <img src="~/Content/images/Tobin's Spirit Guide.jpg" />
+                    <div class="hover">
+                        <div class="item-content">
+                            <a href="cart.html" class="btn white normal">Add to cart</a>
+                            <a href="singleproduct.html" class="btn white normal">See details</a>
+                        </div>
+                        <span class="bg"></span>
+                    </div>
+                </div>
+                <span class="name">Tobin's Spirit Guide VOL I</span>
+                <span>$250.00</span>
+            </div>
+        </li>
+        <li>
+            <div class="item">
+                <div class="image">
+                    <img src="~/Content/images/Tobin's Spirit Guide.jpg" />
+                    <div class="hover">
+                        <div class="item-content">
+                            <a href="cart.html" class="btn white normal">Add to cart</a>
+                            <a href="singleproduct.html" class="btn white normal">See details</a>
+                        </div>
+                        <span class="bg"></span>
+                    </div>
+                </div>
+                <span class="name">Tobin's Spirit Guide VOL II</span>
+                <span>$250.00</span>
+            </div>
+        </li>
+    </ul>
+    <div class="top-bar top-bar-add">
+        <ul class="paging">
+            <li class="prev"><a href="#">prev</a></li>
+            <li><a href="#">1</a></li>
+            <li class="active"><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li class="next"><a href="#">next</a></li>
+        </ul>
+    </div>
+</section>
+
