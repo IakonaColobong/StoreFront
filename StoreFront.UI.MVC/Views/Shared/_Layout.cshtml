@@ -3,7 +3,7 @@
 <!--[if IE 9]> <html class="ie9" lang="en"> <![endif]-->
 <!--[if gt IE 9]><!-->
 <html lang="en">
- <!--<![endif]-->
+<!--<![endif]-->
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
@@ -20,8 +20,8 @@
 </head>
 <body>
     <div id="wrapper">
-        <div class="wrapper-holder">
             <header id="header">
+        <div class="wrapper-holder">
                 <span class="logo"><a href="index.html">Wizards OFF the Coast</a></span>
                 <ul class="tools-nav tools-nav-mobile">
                     <li class="items"><a href="cart.html"><span>2</span> Items, <strong>$599.00</strong></a></li>
@@ -31,11 +31,11 @@
                     <a class="menu_trigger" href="#">menu</a>
                     <nav id="nav">
                         <ul>
-                            <li>@Html.ActionLink("Home","Index","Home")</li>
+                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
                             <li>@Html.ActionLink("Contact Us", "Contact", "Home")</li>
                             <li>@Html.ActionLink("Book Titles", "Products", "Home")</li>
                             @*<li><a @Url.Action("Home", "Contact")>Contact</a></li>*@
-                            
+
                         </ul>
                     </nav>
                     <ul class="tools-nav">
@@ -43,11 +43,34 @@
                         <li class="login"><a href="#">Login</a> / <a href="#">register</a></li>
                     </ul>
                 </div>
-            </header>
-            @RenderBody()
-
-          
         </div>
+            </header>
+        <!--This will begin the background for this region-->
+        <div id="home" class="hero-area">
+            <div class="bg-image bg-parallax overlay" style="background-image:url(../../Content/images/crow.jpg)"></div>
+        </div>
+        <!--ENDS BACKGROUND IMAGE-->
+
+        <!--INSERTING TEXT OVER BACKGROUND IMAGE-->
+
+
+        <!--Tables will display below-->
+        <div id="main" class="section">
+            <div class="container">              
+                <div id="MessageDisplay" class="row">
+                    <div class="col-md-10 col-md--offset-1" id="MessageContent">
+
+                    </div>
+                </div>
+                <div class="row">
+                    @RenderBody()
+                </div>
+            </div>
+        </div>
+
+
+
+
         <footer id="footer">
             <div class="footer-holder">
                 <div class="footer-frame">
