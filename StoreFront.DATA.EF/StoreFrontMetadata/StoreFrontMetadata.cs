@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Data.Entity;//added in attempt to link scaffold DB
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.ComponentModel.DataAnnotations;
-using System.Data.Entity;//added in attempt to link scaffold DB
 
 
 namespace StoreFront.DATA.EF//.StoreFrontMetadata
@@ -33,4 +33,17 @@ namespace StoreFront.DATA.EF//.StoreFrontMetadata
             get { return $"{FName} {LName}"; }
         }
     }
+
+    public class BooksTableMetadata
+    {
+        [Display(Name = "Book Title")]
+        [StringLength(50, ErrorMessage = "50 character maximum")]
+        public string BookTitle { get; set; }
+    }
+    [MetadataType(typeof(BooksTableMetadata))]
+
+    public partial class BooksTable
+    { }
+    
 }
+

@@ -169,6 +169,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AuthorTablesController.cs" />
+    <Compile Include="Controllers\BooksTablesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\RolesAdminController.cs" />
@@ -473,6 +474,11 @@
     <Content Include="Views\AuthorTables\Details.cshtml" />
     <Content Include="Views\AuthorTables\Edit.cshtml" />
     <Content Include="Views\AuthorTables\Index.cshtml" />
+    <Content Include="Views\BooksTables\Create.cshtml" />
+    <Content Include="Views\BooksTables\Delete.cshtml" />
+    <Content Include="Views\BooksTables\Details.cshtml" />
+    <Content Include="Views\BooksTables\Edit.cshtml" />
+    <Content Include="Views\BooksTables\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
