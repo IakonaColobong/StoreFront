@@ -69,6 +69,10 @@ time, mark, audio, video {
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
+    z-index: 99;
+}
+#wrapper {
+    z-index: 99;
 }
 
 img {
@@ -245,6 +249,7 @@ a {
     width: 100%;
     height: 100%;
     display: table;
+    background-color: white;
 }
 
 .wrapper-holder {
@@ -253,10 +258,11 @@ a {
 }
 
 #header {
-    max-width: 1170px;
+    /*max-width: 1170px;*/
     margin: 0 auto;
     padding: 50px 20px 45px;
     position: relative;
+    background-color: white;
 }
 
 .menu_trigger {
@@ -1035,6 +1041,11 @@ div.selector {
     bottom: 0;
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(6px);
+    -webkit-filter: blur(6px);
+    color: white;
+    z-index: 0;
 }
 
     .bg-image.bg-parallax {
@@ -1052,19 +1063,79 @@ div.selector {
         background-image: linear-gradient(to bottom, #374050 0%, #798696 100%);
         opacity: 0.7;
     }
+/*.hero-area {
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#home.hero-area {
+    /*height:calc(100vh - 80px);*/ /*/*Mod01 Review: Improve hero-area to take up less of the "above the fold" - more traditional banner height*/
+    /*height: calc(70vh - 80px);
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.home-wrapper {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+}
+
+/* -- Breadcrumb -- */
+/*.hero-area-tree li {
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+    .hero-area-tree li > a {
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    .hero-area-tree li + li:before {
+        content: "/";
+        display: inline-block;
+        margin: 0px 5px;
+        color: rgba(235, 235, 235, 0.25);
+    }*/
+
+
 
     /*END BACKGROUND IMAGE*/
+
+    /* WORDS IN BACKGROUND IMAGE*/
+    .wall {
+        text-align: center;
+        z-index: 98;
+        color: white;
+    }
+    .slogan {
+        text-align: center;
+        color: white;
+        z-index: 97;
+        
+    }
 
 #footer {
     width: 100%;
     overflow: hidden;
     display: table-footer-group;
-    background: #444;
+    background: white;
+    z-index: 99;
+    border-top: 2px solid white;
 }
 
     #footer .footer-holder {
         height: 1%;
         display: table-row;
+        z-index: 99;
     }
 
     #footer .footer-frame {

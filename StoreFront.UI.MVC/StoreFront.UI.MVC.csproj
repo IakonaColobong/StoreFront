@@ -185,6 +185,26 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\Scripts\bootstrap.js" />
+    <Content Include="App_Data\Scripts\bootstrap.min.js" />
+    <None Include="App_Data\Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="App_Data\Scripts\jquery-3.3.1.js" />
+    <Content Include="App_Data\Scripts\jquery-3.3.1.min.js" />
+    <Content Include="App_Data\Scripts\jquery-3.3.1.slim.js" />
+    <Content Include="App_Data\Scripts\jquery-3.3.1.slim.min.js" />
+    <None Include="App_Data\Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="App_Data\Scripts\jquery.validate.js" />
+    <Content Include="App_Data\Scripts\jquery.validate.min.js" />
+    <Content Include="App_Data\Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="App_Data\Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="App_Data\Scripts\js\fancySelect.js" />
+    <Content Include="App_Data\Scripts\js\jquery.bxslider.min.js" />
+    <Content Include="App_Data\Scripts\js\jquery.placeholder.js" />
+    <Content Include="App_Data\Scripts\js\jquery.uniform.min.js" />
+    <Content Include="App_Data\Scripts\js\main.js" />
+    <Content Include="App_Data\Scripts\modernizr-2.8.3.js" />
+    <Content Include="App_Data\Scripts\respond.js" />
+    <Content Include="App_Data\Scripts\respond.min.js" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -389,6 +409,8 @@
     <Content Include="fonts\fonts\novecentosanswide-normal-webfont.eot" />
     <Content Include="fonts\fonts\novecentosanswide-normal-webfont.ttf" />
     <Content Include="fonts\fonts\novecentosanswide-normal-webfont.woff" />
+    <Content Include="App_Data\Scripts\jquery-3.3.1.min.map" />
+    <Content Include="App_Data\Scripts\jquery-3.3.1.slim.min.map" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -481,9 +503,7 @@
     <Content Include="Views\BooksTables\Edit.cshtml" />
     <Content Include="Views\BooksTables\Index.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
