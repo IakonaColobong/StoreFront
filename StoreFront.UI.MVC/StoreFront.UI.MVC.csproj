@@ -210,6 +210,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\css\all.css" />
+    <Content Include="Content\css\custom.css" />
     <Content Include="Content\css\fancySelect.css" />
     <Content Include="Content\css\screen.css" />
     <Content Include="Content\css\uniform.css" />
@@ -278,6 +279,7 @@
     <Content Include="Content\images\LemegetonClaviculSalomonis.jpg" />
     <Content Include="Content\images\LiberIvonis.jpg" />
     <Content Include="Content\images\logo%40x2.png" />
+    <Content Include="Content\images\logo.jpg" />
     <Content Include="Content\images\logo.png" />
     <Content Include="Content\images\Maleficio.jpg" />
     <Content Include="Content\images\Necronomicon.jpg" />

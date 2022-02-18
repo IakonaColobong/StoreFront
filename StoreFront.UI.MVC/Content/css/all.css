@@ -279,7 +279,7 @@ a {
 .logo {
     width: 170px;
     height: 21px;
-    background: url(../images/logo.png) no-repeat;
+    /*background: url(../images/logo.jpg) no-repeat;*/
     text-indent: -9999px;
     overflow: hidden;
     display: block;

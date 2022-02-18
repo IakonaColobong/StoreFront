@@ -9,11 +9,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="format-detection" content="telephone=no">
-    <title>Elegantic</title>
+    <title>Wizards Off The Coast</title>
     <link rel="stylesheet" href="~/Content/css/fancySelect.css" />
     <link rel="stylesheet" href="~/Content/css/uniform.css" />
     <link rel="stylesheet" href="~/Content/css/all.css" />
-    <link media="screen" rel="~/Content/stylesheet" type="text/css" href="css/screen.css" />
+    @*<link media="screen" rel="~/Content/stylesheet" type="text/css" href="css/screen.css" />*@
+    <link rel="stylesheet" href="~/Content/css/custom.css" />
     <!--[if lt IE 9]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -47,20 +48,16 @@
         </header>
         <!--This will begin the background for this region-->
         <div id="home" class="hero-area">
-            <div class="bg-image bg-parallax overlay" style="background-image:url(../../Content/images/crow.jpg)"></div>
-        </div>
-        <!--ENDS BACKGROUND IMAGE-->
-        <!--INSERTING TEXT OVER BACKGROUND IMAGE-->
-        <!--Tables will display below-->
-        <div id="main" class="section">
-            <div class="container">
-                <div id="MessageDisplay" class="row">
-                    <div class="col-md-10 col-md--offset-1" id="MessageContent">
-
+            <!--Tables will display below-->
+            <div id="main" class="section">
+                <div class="container">
+                    <div id="MessageDisplay" class="row">
+                        <div class="col-md-10 col-md--offset-1" id="MessageContent">
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    @RenderBody()
+                    <div class="row">
+                        @RenderBody()
+                    </div>
                 </div>
             </div>
         </div>
@@ -109,7 +106,7 @@
                     </div>
                     <div class="footer-bottom">
                         <div class="holder">
-                            <p>Copyright 2014 Elegantic. All rights reserved.</p>
+                            <p>Copyright 2014 Wizards Off The Coast. All rights reserved.</p>
                         </div>
                     </div>
                 </div>
